@@ -21,6 +21,7 @@ gparams = {'apikey': apikey}
 for root, dirs, files in os.walk('./'):
     for file in files:
         if file != 'complete.py':
+            workbook = xlwt.Workbook(encoding='utf-8')
             worksheet = workbook.add_sheet(file)
             col_width_0 = 256*20
             col_width_1 = 256*18
