@@ -15,7 +15,7 @@ workbook.set_colour_RGB(0x21, 216, 216, 216)
 xlwt.add_palette_colour("lightgreen", 0x22)
 workbook.set_colour_RGB(0x22, 216,228,188)
 
-apikey= '17676e1221128d0f94607400591df0406ad85fba8eb24ffda413781e9e36d5e6'
+apikey= 'Your APIKey'
 gparams = {'apikey': apikey}
 
 for root, dirs, files in os.walk('./'):
