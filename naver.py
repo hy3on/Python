@@ -4,7 +4,7 @@ import sys
 
 driver = webdriver.Chrome('C:\chromedriver.exe')#크롬 드라이버
 driver.get('https://nid.naver.com/nidlogin.login')#네이버 로그인페이지
-delay = 3# 3초 딜레이 주기(오류나는거방지)
+delay = 3# 3초 딜레이 주기
 driver.implicitly_wait(delay)
 
 driver.find_element_by_name('id').send_keys(sys.argv[1])#id 인자로 받기
@@ -25,5 +25,3 @@ for n in Maillist:#출력
     print(n.text.strip())
 
 driver.close()#드라이버 종료
-
-#오류 날때도 많으니 답답하다면 delay를 늘리면 
